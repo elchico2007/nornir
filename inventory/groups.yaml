@@ -1,0 +1,35 @@
+---
+global:
+    data:
+        domain: global.local
+        username: admin
+        password: admin
+ios:
+    groups:
+        - global
+    data:
+        asn: 65100
+        platform: ios
+        type: network_device
+        port: 22
+    connection_options:
+        napalm:
+            extras:
+                optional_args:
+                    secret: admin
+junos:
+    groups:
+        - global
+    data:
+        asn: 65101
+        platform: junos
+        type: network_device
+eos:
+    groups:
+        - global
+    data:
+        platform: eos
+        type: network_device
+        vlans:
+            - vlan_id: 10
+              name: TEST-VLAN-10
