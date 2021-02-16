@@ -1,18 +1,24 @@
 ---
-rtr-1:
-    hostname: 192.168.1.1
+lab-vdx-1:
+    hostname: lab-vdx-1
     site: alderaan
     groups:
-      - ios
+      - nos
+    platform: ios
+    type: network_device
 
-fw-1:
-    hostname: 192.168.1.3
+lab-qfx-1:
+    hostname: lab-qfx-1
     site: endor
     groups:
       - junos
+    platform: junos
+    type: network_device
 
-sw-1:
-    hostname: 192.168.1.4
+lab-dcs-1:
+    hostname: lab-dcs-1
     site: tatooine
     groups:
       - eos
+    platform: eos
+    type: network_device
