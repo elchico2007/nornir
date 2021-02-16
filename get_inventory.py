@@ -14,11 +14,11 @@ print(nr.inventory.hosts.keys())
 print(nr.inventory.groups)
 
 # inheritence
-rtr_1 = nr.inventory.hosts['rtr-1']
+lab_vdx_1 = nr.inventory.hosts['lab-vdx-1']
 
 # printing domain from global
-print(rtr_1['domain'])
+print(lab_vdx_1['domain'])
 
 # printing domain from local group
-print(rtr_1['asn'])
+print(lab_vdx_1['asn'])
 
