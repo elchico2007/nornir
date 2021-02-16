@@ -1,10 +1,11 @@
 ---
 inventory:
-    plugin: SimpleInventory
+    plugin: AnsibleInventory
     options:
-        host_file: "inventory/hosts.yaml"
-        group_file: "inventory/groups.yaml"
-        defaults_file: "inventory/defaults.yaml"
+        hostsfile: "inventory/ansible_inv.yaml"
+        # host_file: "inventory/hosts.yaml"
+        # group_file: "inventory/groups.yaml"
+        # defaults_file: "inventory/defaults.yaml"
 runner:
     plugin: threaded
     options:
