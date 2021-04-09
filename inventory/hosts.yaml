@@ -1,24 +1,30 @@
 ---
-lab-vdx-1:
-    hostname: lab-vdx-1
-    site: alderaan
-    groups:
-      - nos
+cisco1:
+    hostname: 192.168.1.1
     platform: ios
-    type: network_device
+    site: alderaan
+    username: admin
+    password: admin
+    groups:
+      - ios
+      - all
 
-lab-qfx-1:
-    hostname: lab-qfx-1
+juniper1:
+    hostname: 192.168.1.3
+    platform: junos
     site: endor
+    username: admin
+    password: admin
     groups:
       - junos
-    platform: junos
-    type: network_device
+      - all
 
-lab-dcs-1:
-    hostname: lab-dcs-1
+arista1:
+    hostname: 192.168.1.4
+    platform: eos
     site: tatooine
+    username: admin
+    password: admin
     groups:
       - eos
-    platform: eos
-    type: network_device
+      - all
